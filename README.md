@@ -32,7 +32,7 @@ install install Jenkins as container on ubuntu
           14    - /var/run/docker.sock:/var/run/docker.sock
 
       
- # this yaml file will get the lastest versio of the jenkins as : mage: jenkins/jenkins:lts
+ # this yaml file will get the lastest version of the jenkins as : mage: jenkins/jenkins:lts
  # set ports, and volumes. 
  ## 
  
