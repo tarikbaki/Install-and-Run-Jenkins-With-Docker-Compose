@@ -57,7 +57,7 @@ Run docker-compose in the directory where you placed docker-compose.yaml.
   Now point a web browser at port 8080 on your host system. You’ll see the unlock page.
 ![image](https://user-images.githubusercontent.com/56624571/216549542-58e4a442-c196-4d43-9f8c-25e570f8540b.png)
 
-$ docker logs jenkins | less
+        $ docker logs jenkins | less
 
 Look for a block enclosed with six lines of asterisks.
 
