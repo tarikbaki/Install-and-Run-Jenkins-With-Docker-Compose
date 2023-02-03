@@ -32,23 +32,23 @@ install install Jenkins as container on ubuntu
   14    - /var/run/docker.sock:/var/run/docker.sock
       
       
- ## this yaml file will get the lastest versio of the jenkins as : mage: jenkins/jenkins:lts
- ## set ports, and volumes. 
+ # this yaml file will get the lastest versio of the jenkins as : mage: jenkins/jenkins:lts
+ # set ports, and volumes. 
  ## 
  
-Line #1 is a comment.
+- Line #1 is a comment.
 
-Line #2 tells Docker Compose which version of the Compose specification we’re using.
+- Line #2 tells Docker Compose which version of the Compose specification we’re using.
 
-Line #3 starts defining services. For now, we just have one. 
+- Line #3 starts defining services. For now, we just have one. 
 
 The rest of the file defines the Jenkins container. 
 
-It will run the latest Jenkins image with root privileges. We’re running the container with host networking, so lines #9 and #10 tell Docker to redirect ports 8080 and 50000 to the host’s network. 
+- It will run the latest Jenkins image with root privileges. We’re running the container with host networking, so lines #9 and #10 tell Docker to redirect ports 8080 and 50000 to the host’s network. 
 
 The container’s name is jenkins.
 
-Finally, /home/${myname}/jenkins_compose/jenkins_configuration is mapped to /var/jenkins_home in the container. 
+- Finally, /home/${myname}/jenkins_compose/jenkins_configuration is mapped to /var/jenkins_home in the container. 
 
 Run docker-compose in the directory where you placed docker-compose.yaml.
 
