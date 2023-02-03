@@ -16,21 +16,21 @@ install install Jenkins as container on ubuntu
       
 ## here is the contex of the yaml file: 
 
-  1 #docker-compose.yaml
-  2 version: '3.8'
-  3 services:
-  4   jenkins:
-  5   image: jenkins/jenkins:lts
-  6    privileged: true
-  7    user: root
-  8    ports:
-  9     - 8080:8080
-  10     - 50000:50000
-  11    container_name: jenkins
-  12    volumes:
-  13    - /home/ubuntu/jenkins/jenkins_configuration:/var/jenkins_home
-  14    - /var/run/docker.sock:/var/run/docker.sock
-      
+          1 #docker-compose.yaml
+          2 version: '3.8'
+          3 services:
+          4   jenkins:
+          5   image: jenkins/jenkins:lts
+          6    privileged: true
+          7    user: root
+          8    ports:
+          9     - 8080:8080
+          10     - 50000:50000
+          11    container_name: jenkins
+          12    volumes:
+          13    - /home/ubuntu/jenkins/jenkins_configuration:/var/jenkins_home
+          14    - /var/run/docker.sock:/var/run/docker.sock
+
       
  # this yaml file will get the lastest versio of the jenkins as : mage: jenkins/jenkins:lts
  # set ports, and volumes. 
